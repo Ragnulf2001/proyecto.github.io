@@ -1,0 +1,50 @@
+@media only screen and (max-width: 768px) {
+
+    // Navbar
+    #navbar {
+      text-align: center;
+      .logo {
+        float: none;
+        margin-bottom: 20px;
+      } //End .logo
+      ul {
+        float: none;
+        li {
+          float: none;
+          a {
+            padding: 10px;
+          }
+        }
+      } //End ul
+    } //End #navbar
+  
+  // Footer
+  #mainfooter {
+    background: #ededed
+  }
+  
+  } //End @media
+  
+  /* Smartphones */
+  @media only screen and (max-width: 500px){
+   
+  }
+  
+  /* Tablet */
+  @media(min-width: 501px) and (max-width: 768px){
+    
+  }
+  
+  /* Normal */
+  @media(min-width: 769px) and (max-width: 1200px){
+  
+  }
+  
+  /* Widescreen */
+  @media(min-width: 1201px){
+  
+  }
+  
+  /* Landscape */
+  @media(max-height: 500px){
+  }  

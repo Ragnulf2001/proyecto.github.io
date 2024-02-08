@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <title>Realidad Virtual Geográfica</title>
+</head>
+<body>
+    <a-scene>
+        <!-- Cielo con gradiente -->
+        <a-sky color="#87CEEB" material="shader: gradient; topColor: #87CEEB; bottomColor: #78C7C1;"></a-sky> 
+
+        <!-- Luces ambientales -->
+        <a-light type="ambient" color="#888"></a-light>
+
+        <!-- Luces direccionales para simular la luz solar -->
+        <a-light type="directional" position="-5 5 5" target="#earth" intensity="0.5"></a-light>
+        <a-light type="directional" position="5 5 5" target="#earth" intensity="0.5"></a-light>
+
+        <!-- Esfera que representa la Tierra -->
+        <a-sphere id="earth" position="0 1.25 -5" radius="1.25" color="#7BC8A4" shadow></a-sphere> 
+
+        <!-- Texto informativo -->
+        <a-text value="¡Explora el mundo!" color="#333" position="4 2 -5" align="center" scale="2 2 2"></a-text>
+
+        <!-- Información geográfica sobre algunos países -->
+        <a-text value="EE. UU., Canada, Mexico" color="#333" position="-2 0 -4" align="center"></a-text>
+        <a-text value="Brasil, Argentina, Chile" color="#333" position="0 3 -4" align="center"></a-text>
+        <a-text value="Espana, Francia, Italia" color="#333" position="2 0 -4" align="center"></a-text>
+    </a-scene>
+</body>
+</html>

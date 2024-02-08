@@ -1,0 +1,38 @@
+//Import Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+
+// Font
+$font-title: 'Roboto', sans-serif;
+$font-body: 'Roboto', sans-serif;;
+
+
+//color
+$body-color: #777;
+
+//Import
+@import 'mobile';
+
+
+body, html {
+	font-family: $font-title;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	color: $body-color;
+	font-weight: 300;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+
+
+
+
+
+a {
+	color: #232222;
+	font-weight: 400;
+    &:hover, &:focus {
+        text-decoration: none;
+        color: #222;
+    }
+}

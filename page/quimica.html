@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realidad Virtual en Educación Química</title>
+    <!-- Incluir A-Frame -->
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <!-- Laboratorio Virtual -->
+        <a-entity position="0 1.6 0">
+            <a-box color="blue" width="4" height="4" depth="4"></a-box>
+        </a-entity>
+
+        <!-- Modelos Moleculares 3D -->
+        <a-entity position="5 1.6 0" rotation="0 45 0">
+            <a-sphere color="red" radius="2"></a-sphere>
+        </a-entity>
+
+        <!-- Viaje a Nivel Atómico -->
+        <a-entity position="-5 1.6 0" rotation="0 -45 0">
+            <a-sphere color="green" radius="1"></a-sphere>
+        </a-entity>
+
+        <!-- Simulación de Reacciones Químicas -->
+        <a-entity position="0 1.6 -5" rotation="0 0 0">
+            <a-cylinder color="yellow" radius="1" height="4"></a-cylinder>
+        </a-entity>
+
+        <!-- Entorno Educativo Virtual -->
+        <a-entity position="0 0 -10">
+            <a-sky color="#111"></a-sky>
+            <a-plane rotation="-90 0 0" width="30" height="30" color="#7BC8A4"></a-plane>
+        </a-entity>
+
+        <!-- Colaboración en Tiempo Real -->
+        <a-entity position="0 5 0">
+            <a-text value="Colaboración en Tiempo Real" position="-2 2 0" color="white"></a-text>
+        </a-entity>
+
+        <!-- Recorridos por la Historia de la Química -->
+        <a-entity position="0 -5 0">
+            <a-text value="Recorridos por la Historia de la Química" position="-2 -2 0" color="white"></a-text>
+        </a-entity>
+    </a-scene>
+</body>
+</html>
