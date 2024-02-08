@@ -818,29 +818,29 @@ color: #777;
   
 
   .justify-p{
-	text-align: justify;
+	text-align: justify !important;
   }
 
   .sobre-nosotros-text ul {
-	display: grid;
+	display: grid !important;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 20px;
-	text-align: justify;
+	text-align: justify !important;
 }
 
 .sobre-nosotros-text li {
-	list-style-type: none;
+	list-style-type: none !important;
 }
 
 .sobre-nosotros-text li a {
-	display: block;
-	margin: 0 none; 
+	display: block !important;
+	margin: 0 none !important; 
 }
 
 .line-div{
-		border-left: 1px solid #04B4AE; 
-		border-right: 1px solid #04B4AE;
-        border-bottom: 1px solid #04B4AE; 
+		border-left: 1px solid #04B4AE !important; 
+		border-right: 1px solid #04B4AE !important;
+        border-bottom: 1px solid #04B4AE !important; 
         padding-bottom: 20px; 
         margin-bottom: 20px;
 		padding-left: 20px; 
